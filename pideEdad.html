@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pide una Edad</title>
+</head>
+
+<body>
+
+    <h1> Según tu edad >:V</h1>
+    <!--En el ejercicio 1: 
+        *se pide el valor a través de un prompt y se almacena en la variable llamada: "edad"
+        
+        *comparamos si el valor ingresado es un número: (if) [*isNaN* es un valor booleano 
+        intenta convertir el parámetro pasado a través de la variable "edad" a un número. 
+        Si el parámetro no se puede convertir, devuelve true; en caso contrario, devuelve false.]
+        
+        *Si el valor es un número, vuelve a comparar si es un número mayor o igual a 18, si lo es
+        escribe en el documento "Eres mayor de edad y puedes conducir" y sino "Eres menor de edad, 
+        esperate a cumplir 18" -->
+
+    <script>
+        //pedimos el valor a través de un prompt
+        let edad = prompt("Ingrese su edad: ");
+
+        //comparamos si el valor ingresado es un número
+        if (isNaN(edad)) {
+            //isNan es un booleano que compara si el valor ingresado es un número o no (true o false)
+            alert("No ingresaste un número, ingresa el dato nuevamente");
+        } else {
+            //comparamos si el valor ingresado es mayor o igual a 18
+            if (edad >= 18) {
+                document.write("Eres mayor de edad y puedes conducir");
+            } else {
+                document.write("Eres ilegal papú, esperate a cumplir 18");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificación</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        //pide una nota a través de un prompt y calificalo en base a la siguiente tabla
+        //0-3: Muy deficiente
+        //3-5: Insuficiente
+        //5-6: Suficiente
+        //6-7: Bien
+        //7-9: Notable
+        //9-10: Sobresaliente
+
+        //con Dowhile
+        // BUCLE PARA QUE PERMITA INTRODUCIR MÁS DE UNA NOTA
+        do {
+            // PIDE UNA NOTA POR TECLADO Y LA GUARDA EN LA VARIABLE nota
+            var nota = prompt("Introduce tu nota");
+            // SI SE INTRODUJO UN NÚMERO
+            if (!isNaN(nota)) {
+                // SI LA NOTA ES ENTRE 0 Y 10 COMPRUEBA EL RANGO Y DA UN MENSAJE
+                if (nota > 0 && nota <= 10) {
+                    if (nota < 3) {
+                        alert("Muy deficiente");
+                    }
+                    else if (nota < 5) {
+                        alert("Insuficiete");
+                    } else if (nota < 6) {
+                        alert("Suficiente");
+                    } else if (nota < 7) {
+                        alert("Bien");
+                    } else if (nota < 9) {
+                        alert("Notable"); 
+                    } else if (nota >= 9) {
+                        alert("Sobresaliente");
+                    }
+                }
+                // SI LA NOTA NO ES ENTRE 0 Y 10
+                else {
+                    alert("Nota erronea");
+                }
+            }
+            // SI LA NOTA INTRODUCIDA NO ES UN NÚMERO
+            else {
+                // SI SE HA PULSADO ACEPTAR SIN INTRODUCIR NADA
+                if (nota != undefined) { //No es Undefined cuando se pulsa aceptar.
+                    alert("Introduce un numero valido");
+                }
+            }
+            // EL BUCLE VUELVE ARRIBA MIENTRAS NO SE HAYA PULSADO CANCELAR
+        }
+        while (nota != undefined); // Undefined es cuando se pulsa Cancelar.
+    </script>
+
+</body>
+
+</html>
