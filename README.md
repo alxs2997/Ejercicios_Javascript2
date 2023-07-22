@@ -9,4 +9,4 @@ Portfolio of programming practices in the Javascript language, logic exercises o
 
 Trabajaremos también de manera conjunta con la herramienta Notion, para llevar una lista de objetivos por conseguir en cuanto a conocer Git y Github se trata.
 
-![Imagen](image.png)
+![imagen](https://github.com/alxs2997/Ejercicios_Javascript2/assets/98421465/4e9d4f8d-b013-4ca8-843b-8604baeb9cc2)
